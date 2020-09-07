@@ -16,6 +16,7 @@
          background: rgba(0, 0, 0, .25);
          display: flex;
          justify-content: space-between;
+         margin-bottom: 10px;
       }
 
       #logo {
@@ -36,12 +37,17 @@
          background: rgba(0, 0, 0, .25);
          display: flex;
          justify-content: center;
+         margin-bottom: 10px;
       }
 
       .heroGraphic {
          background: rgba(0, 0, 0, .25);
-         width: 500px;
-         height: 500px;
+         /* width: 500px;
+         height: 500px; */
+      }
+
+      .heroGraphic img {
+         width: 100%
       }
 
       .heroHeading {
@@ -59,21 +65,32 @@
       }
 
       #articles {
-         background: rgba(0, 0, 0, .25);
+         /* background: rgba(0, 0, 0, .25); */
          display: flex;
          justify-content: center;
+         margin-bottom: 10px;
       }
 
+      .articleContainer img {
+         width: 100%;
+      }
 
       .articleContainer {
          background: rgba(0, 0, 0, .25);
          width: 300px;
-         margin: 0 25px;
+         margin: 0 1em;
       }
 
       footer {
          background: rgba(0, 0, 0, .25);
+         height: 50px;
+         text-align: center;
       }
+
+      footer nav {
+         background: none;
+      }
+
    </style>
 
 </head>
@@ -93,7 +110,7 @@
 
    <section id="hero">
       <div class="heroGraphic"><img src="https://via.placeholder.com/500x500" alt=""> </div>
-      <div>
+      <div style="display: flex; flex-direction: column; justify-content: center;">
          <div class="heroHeading">
             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
          </div>
@@ -123,7 +140,15 @@
       </div>
    </section>
 
-   <footer>Footer</footer>
+   <footer>
+      <nav>
+         <ul>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+         </ul>
+      </nav>
+   </footer>
 
 </body>
 
