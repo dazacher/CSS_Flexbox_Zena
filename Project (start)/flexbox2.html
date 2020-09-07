@@ -34,6 +34,22 @@
 
       #hero {
          background: rgba(0, 0, 0, .25);
+         display: flex;
+         justify-content: center;
+      }
+
+      .heroGraphic {
+         background: rgba(0, 0, 0, .25);
+         width: 500px;
+         height: 500px;
+      }
+
+      .heroHeading {
+      background: rgba(0, 0, 0, .25);
+      }
+
+      .heroButton {
+      background: rgba(0, 0, 0, .25);
       }
 
       #articles {
@@ -52,18 +68,26 @@
    <header>
       <div id="logo"><img src="https://via.placeholder.com/100x50" alt=""/> </div>
       <nav>
-
          <ul>
             <li><a href="#">Menu Item</a></li>
             <li><a href="#">Menu Item</a></li>
             <li><a href="#">Menu Item</a></li>
          </ul>
       </nav>
-
    </header>
 
 
-   <section id="hero">Hero</section>
+   <section id="hero">
+      <div class="heroGraphic">Hero Graphic</div>
+      <div class="heroHeading"><h1>Lorem ipsum dolor sit amet consectetur.</h1> </div>
+      <div class="heroButton">Hero Button</div>
+      <img src="" alt="">
+
+
+
+   </section>
+
+
    <section id="articles">Articles</section>
    <footer>Footer</footer>
 
